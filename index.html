@@ -149,25 +149,31 @@
   max-width: 900px;
   padding: 30px;
   border-radius: 18px;
-  background: linear-gradient(135deg, #ff512f, #dd2476); /* fiery gradient */
-  color: #fff;
-  box-shadow: 0 0 25px rgba(255, 87, 34, 0.6);
-  animation: flicker 2s infinite alternate;
+  background: linear-gradient(135deg, #ffb3a7, #ffd9b3); /* soft peach gradient */
+  color: #333; /* darker text for readability */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* subtle shadow */
   text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.unblocked-text:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 /* Title */
 .unblocked-text h1 {
   font-size: 32px;
   margin-bottom: 15px;
-  text-shadow: 0 0 10px #ff7300, 0 0 20px #ff0000;
+  color: #a83234; /* gentle accent */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 
 /* Paragraph */
 .unblocked-text p {
   font-size: 17px;
   line-height: 1.7;
-  color: #fff;
+  color: #4a4a4a;
   margin: 0 auto;
   max-width: 750px;
 }
@@ -175,21 +181,19 @@
 /* Links inside paragraph */
 .unblocked-text a {
   font-weight: bold;
-  color: #ffe066 !important; /* golden highlight */
-  text-decoration: none;
+  color: #a83234; /* soft red accent */
+  text-decoration: underline;
   transition: color 0.3s ease-in-out;
 }
 
 .unblocked-text a:hover {
-  color: #fff176 !important; /* lighter gold on hover */
-  text-shadow: 0 0 10px #ff9800, 0 0 20px #ff5722;
+  color: #e85c5c; /* slightly brighter red on hover */
+  text-decoration: none;
 }
 
-/* Flickering background glow */
-@keyframes flicker {
-  0% { box-shadow: 0 0 15px rgba(255,87,34,0.5), 0 0 30px rgba(255,0,0,0.5); }
-  50% { box-shadow: 0 0 25px rgba(255,140,0,0.7), 0 0 50px rgba(255,0,0,0.7); }
-  100% { box-shadow: 0 0 20px rgba(255,87,34,0.6), 0 0 40px rgba(255,0,0,0.6); }
+/* Highlight for top 5 games */
+.unblocked-text strong {
+  color: #ff8a65; /* soft orange highlight */
 }
 </style>
 
@@ -198,9 +202,9 @@
   <p class="text-center text-styling">
     Here we provide all list of 
     <a href="https://only-games.github.io/">unblocked games</a> 
-    or unblocked games premium that you can play in the restricted areas like school, college or at your workplace. Most of the games are popular in students because they like to play them in their idle time. 
-    We have added all of your favourite games like 1v1.lol unblocked, Eggy Car, 2048, and github all games. If we miss some of your favourite game, you can put it in the suggestion box in the top right.<br><br>
-    <strong style="color:#ffb74d;">🔥 A red game tile means that it is within the top 5 most popular games this week.</strong>
+    or unblocked games premium that you can play in the restricted areas like school, college, or at your workplace. Most of the games are popular with students because they like to play them in their idle time.  
+    We have added all of your favourite games like 1v1.lol unblocked, Eggy Car, 2048, and GitHub all games. If we miss some of your favourite game, you can put it in the suggestion box in the top right.<br><br>
+    <strong>🔥 Scroll Down To Explore Your Favourite Games</strong>
   </p>
 </div>
 
