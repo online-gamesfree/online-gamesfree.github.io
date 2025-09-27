@@ -899,18 +899,96 @@
 
 
 	      
+<style>
+/* 🔥 Container Card */
+#played-this-week {
+  margin: 40px auto;
+  max-width: 700px;
+  padding: 25px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: #fff;
+  box-shadow: 0 0 25px rgba(255, 87, 34, 0.6);
+  animation: flicker 2s infinite alternate;
+  text-align: left;
+}
+
+/* 🔥 Title */
+#played-this-week h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff7300, 0 0 20px #ff0000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 🔥 List Style */
+#played-this-week ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#played-this-week ul li {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 🔥 Links */
+#played-this-week ul li a {
+  flex: 1;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#played-this-week ul li a:hover {
+  background: linear-gradient(45deg, #ff6a00, #ff0000);
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.8);
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* 🔥 Flame Emoji Animation */
+.flame {
+  font-size: 20px;
+  display: inline-block;
+  animation: flame-bounce 1s infinite alternate;
+}
+
+@keyframes flame-bounce {
+  from { transform: translateY(0) rotate(0deg); }
+  to { transform: translateY(-5px) rotate(-10deg); }
+}
+
+/* 🔥 Flicker Glow Effect */
+@keyframes flicker {
+  0% { box-shadow: 0 0 15px rgba(255,87,34,0.5), 0 0 30px rgba(255,0,0,0.5); }
+  50% { box-shadow: 0 0 25px rgba(255,140,0,0.7), 0 0 50px rgba(255,0,0,0.7); }
+  100% { box-shadow: 0 0 20px rgba(255,87,34,0.6), 0 0 40px rgba(255,0,0,0.6); }
+}
+</style>
+
 <section class="card" id="played-this-week">
-  <div class="container last-section" style="text-align: left;">
-	  <div class="most-played-widget">
-  <h2>🔥 Most Played This Week</h2>
-  <ul>
-    <li><a href="https://only-games.github.io/projects/tunnel-rush/index.html">Tunnel Rush</a></li>
-    <li><a href="https://only-games.github.io/projects/little-alchemy/index.html">Little Alchemy</a></li>
-    <li><a href="https://only-games.github.io/projects/ages-of-conflict/index.html">Ages Of Conflict</a></li>
-    <li><a href="https://only-games.github.io/projects/boxing-random/index.html">Boxing Random</a></li>
-    <li><a href="https://only-games.github.io/projects/baldis-basics/index.html">Baldis Basics</a></li>
-  </ul>
-</div>
+  <div class="container last-section">
+    <div class="most-played-widget">
+      <h2>🔥 Most Played This Week</h2>
+      <ul>
+        <li><span class="flame">🔥</span><a href="https://only-games.github.io/projects/tunnel-rush/index.html">Tunnel Rush</a></li>
+        <li><span class="flame">🔥</span><a href="https://only-games.github.io/projects/little-alchemy/index.html">Little Alchemy</a></li>
+        <li><span class="flame">🔥</span><a href="https://only-games.github.io/projects/ages-of-conflict/index.html">Ages Of Conflict</a></li>
+        <li><span class="flame">🔥</span><a href="https://only-games.github.io/projects/boxing-random/index.html">Boxing Random</a></li>
+        <li><span class="flame">🔥</span><a href="https://only-games.github.io/projects/baldis-basics/index.html">Baldis Basics</a></li>
+      </ul>
+    </div>
+  </div>
 </section>
 		<section class="card" id="intention">
      <div class="container last-section" style="text-align: left;">
